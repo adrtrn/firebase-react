@@ -32,7 +32,7 @@ class App extends Component {
     event.preventDefault()
     database.ref()
             .child('AMAZING MEOW')
-            .set(this.state.newData)
+            .push(this.state.newData)
   }
 
   render () {
